@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/joselsalazar/flashcard-generator/issues"
   },
-  "homepage": "https://github.com/joselsalazar/flashcard-generator#readme"
+  "homepage": "https://github.com/joselsalazar/flashcard-generator#readme",
+  "dependencies": {
+    "inquirer": "^3.1.1"
+  }
 }

@@ -1,0 +1,1 @@
+Add a third option to initial prompt. Add flash card which will use the cloze function (i.e. showing only the answer preceded by three dots).
