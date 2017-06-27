@@ -1,8 +1,16 @@
 =====================
-Back of Card: What is the best video game system?
-Front of Card: PC
+Front of Card: Ancient Analog Computer that was discovered by divers off a Greek Island in 1900.
+Back of Card: Antikythera Mechanism
 =====================
 =====================
-Back of Card: What is the best food?
-Front of Card: Mexican Food
+Front of Card: Largest Island in the Mediterranean Sea.
+Back of Card: Sicily
+=====================
+=====================
+Front of Card: Harvard dropout that co-founded Microsoft.
+Back of Card: Bill Gates
+=====================
+=====================
+Front of Card: First year the Super Bowl was played.
+Back of Card: 1967
 =====================

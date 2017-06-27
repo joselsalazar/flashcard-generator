@@ -14,15 +14,18 @@ inquirer.prompt ([
 	{
 		message: "What would you like to do?",
 		type: "list",
-		choices: ["Create", "View"],
+		choices: ["Create", "Flash Cards", "View Cards"],
 		name: "choice"
 		
 	}
 ]).then(function (answers) {
 	if(answers.choice === "Create") {
 		createCard();
+	} else if (answers.choice === "Flash Cards") {
+		cardCheck.flashcard();
+		setTimeout(flashCards, 2000);
 	} else {
-		cardCheck.show();	
+		cardCheck.show();
 	}
 });
 
@@ -31,12 +34,12 @@ function createCard() {
 		{
 			message: "Create the front of the card (the question)",
 			type: "input",
-			name: "back_card"
+			name: "front_card"
 		},
 		{
 			message: "Create the back of the card (the answer)",
 			type:"input",
-			name: "front_card"
+			name: "back_card"
 		},
 		{
 			message: "Create another?",
@@ -50,6 +53,20 @@ function createCard() {
 		if (answers.confirm) {
 			setTimeout(createCard, 1000);
 		} else {
+			cardCheck.show();
+		}
+	});
+}
+
+function flashCards() {
+	inquirer.prompt([
+		{
+			message: "Show Full Flash Cards?",
+			type: "confirm",
+			name: "confirm"
+		}
+	]).then(function(answers) {
+		if (answers.confirm) {
 			cardCheck.show();
 		}
 	});
